@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <title>Get a Job with GIT</title>
+</head>
+<body>
+    <header>
+        <nav class="contenedor">
+            <h1>devjobs</h1>
+            <div class="logos contenedor">
+                <i class='bx bxs-sun'></i>
+                <div class="toggle">
+                    <i class="circle"></i>
+                </div>
+                <i class='bx bxs-moon' ></i>
+            </div>
+        </nav>
+    </header>
+    <div class="container contenedor">
+    <div class="filtro contenedor">
+        <div class="buscartexto">
+            <i class='bx bx-search' id="searchbtn"></i>
+            <input id="inputForm" type="text"  placeholder="Search by title, companies, expertises...">
+        </div>
+        <div class="buscarlocation">
+            <i class='bx bxs-map'></i>
+            <input id="inputLocation" type="text"  placeholder="Search by location">
+        </div>
+        <div class="buscar">
+            <input id="checkFulltime" type="checkbox">
+            <label >Full time Only</label>
+            <button class="search">Search</button>
+        </div>
+    </div>
+
+    <section class="jobs-cards contenedor">
+        <template id="plantilla">
+            <div class="card">
+                <img src="img/user.png" alt="">
+                <p>5h</p>
+                <p>Full Time</p>
+                <p>Senior Software developer</p>
+                <p>Sao Digital Inc.</p>
+                <p>Bogotá- Colombia</p>
+                <a href="">View more..</a>
+            </div>  
+        </template>
+    </section>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/darkMode.js"></script>
+    <script src="js/buscar.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

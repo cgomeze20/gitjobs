@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-back-principal);
+}
+
+
+:root{
+    --color-back-principal:#F5F6F8;
+    --color-primario:#fff;
+    --color-text-primario: #566573;
+    --color-text-secundario:#000;
+    --color-text-tercero:#5964E0;
+    --color-back-tercero:#5964E0;
+    --color-text-white:#fff; 
+}
+body.darkMode{
+    --color-back-principal:#1C2833;
+    --color-primario:#2C3E50;
+    --color-text-primario: #F5F6F8;
+    --color-text-secundario:#fff;
+    --color-text-tercero:#5964E0;
+    --color-back-tercero:#5964E0;
+    --color-text-white:#fff;
+}
+.container{
+    /* border: 2px solid red; */
+    position: relative;
+    top: -40px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    flex-direction: column;
+}
+
+.encabezado{
+    width: 70%;
+    height: 100px;
+    background-color: var(--color-primario);
+    display: flex;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-right: 20px;
+}
+.encabezado_imagen{
+    /* border: 1px solid red; */
+    flex-basis: 15%;
+    height: 100px;
+    background-color: var(--color-primario);
+    border-bottom-left-radius: 8px;
+    overflow: hidden;
+}
+.encabezado_imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent;
+}
+.encabezado_detalle{
+    /* border: 1px solid blue; */
+    flex-basis: 60%;
+    height: 100px;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 8px;
+}
+.encabezado_detalle p:first-child{
+    /* color: green; */
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: var(--color-text-secundario);
+}
+.encabezado_detalle p:last-child{
+    color: var(--color-text-tercero);
+    background-color: transparent;
+    font-size: 12px;
+}
+.encabezado_boton{
+    /* border: 1px solid green; */
+    flex-basis: 25%;
+    height: 100px;
+    background-color: var(--color-primario);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.encabezado_boton a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-color: var(--color-back-tercero);
+    opacity: .3;
+    color: var(--color-text-white);
+    font-size: 14px;
+}
+
+.main{
+    width: 70%;
+    background-color: var(--color-primario);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    padding: 1rem;
+}
+
+
+.informacion{
+    display: flex;
+    background-color: var(--color-primario);
+}
+.info_detalle{
+    flex-basis: 75%;
+    /* border: 1px solid red; */
+    background-color: var(--color-primario);
+}
+
+.info_detalle span:first-child{
+    /* color: green; */
+    background-color: transparent;
+    font-size: 12px;
+    color: var(--color-text-primario);
+}
+.info_detalle span:nth-child(2){
+    font-size: 12px;
+    color: var(--color-text-primario);
+    background-color: transparent;
+}
+.info_detalle span:nth-child(3){
+    color: var(--color-text-primario);
+    background-color: transparent;
+    font-size: 12px;
+}
+.info_detalle p:nth-child(4){
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: transparent;
+    margin-bottom: 6px;
+    color: var(--color-text-secundario);
+}
+
+.info_detalle p:nth-child(5){
+    font-size: 10px;
+    color: var(--color-text-tercero);
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.info_boton{
+    flex-basis: 25%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--color-primario);
+}
+.info_boton a{
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: var(--color-back-tercero);
+    color: var(--color-text-white);
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.descripcion{
+    /* padding: 10px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--color-primario);
+    height: auto;
+}
+.descripcion li{
+    color: var(--color-text-primario);
+    font-size: 14px;
+    margin: 0 1.5rem;
+    background-color: var(--color-primario);
+}
+.descripcion ul{
+    background-color: var(--color-primario);
+}
+.descripcion em{
+    background-color: var(--color-primario);
+}
+.descripcion p{
+    background-color: transparent;
+    color: var(--color-text-primario);
+    font-size: 14px;
+    margin: 8px 0;
+    /* border: 1px solid red; */
+}
+.descripcion p strong{
+    background-color: var(--color-primario);
+}
+.descripcion strong{
+    background-color: transparent;
+}
+
+.descripcion a{
+    background-color: transparent;
+}
+
+.aplicar{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: auto;
+    background-color:var(--color-back-tercero);
+    color: var(--color-text-white);
+    padding: .4rem .4rem;
+    overflow: hidden;
+    padding: .5rem;
+}
+.aplicar p{
+    background-color: transparent;
+    margin-bottom: .5rem;
+}
+.aplicar a{
+    background-color: transparent;
+    color: var(--color-text-white);
+    text-overflow: hidden;
+}
+
+.footer{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    background-color: var(--color-primario);
+
+    margin-top: auto;
+}
+.footer_texto{
+    flex-basis: 75%;
+    align-items: center;
+    background-color: transparent;
+}
+.footer_texto p:first-child{
+    font-weight: bolder;
+    font-size: 14px;
+    background-color:transparent;
+    color: var(--color-text-secundario);
+}
+.footer_texto p:last-child{
+    background-color: transparent;
+    color: var(--color-text-primario);
+    font-size: 14px;
+}
+.footer_boton{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+}
+
+.footer_boton a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 22px;
+    font-size: 12px;
+    background-color: var(--color-back-tercero);
+    color: var(--color-text-white);
+    border-radius: 5px;
+}
+
